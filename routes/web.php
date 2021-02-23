@@ -17,6 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/sass', function () {
-    return view('name');
-});
+Route::get('/posts/{id}', 'App\Http\Controllers\StudentController@show');
