@@ -17,4 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/posts/{id}', 'App\Http\Controllers\StudentController@show');
+Route::get('/posts/{id}/{age}', 'App\Http\Controllers\StudentController@show');

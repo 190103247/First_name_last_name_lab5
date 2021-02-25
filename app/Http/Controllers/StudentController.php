@@ -11,9 +11,10 @@ class StudentController extends Controller
         return $students;
     }
 
-    public function show($id)
+    public function show($id, $age)
     {
         $students=$this->get_students();
-        return view('students', ["name" => $students[$id]]);
+        $name = $students[$id];
+        return view('student', compact('name', 'age'));
     }
 }
